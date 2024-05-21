@@ -53,6 +53,7 @@ airline_data = pd.read_csv(file_path,
 
 # Create a dash application layout
 app = dash.Dash(__name__)
+server= app.server
 
 # Get the layout of the application and adjust it.
 # Create an outer division using html.Div and add title to the dashboard using html.H1 component
