@@ -61,6 +61,7 @@ server= app.server
 # Finally, add graph component.
 # Build dash app layout
 
+
 # Define the layout of the app
 app.layout = html.Div(children=[
     # Title
@@ -74,16 +75,16 @@ app.layout = html.Div(children=[
         [
             html.Span(
                 "Input Year: ",
-                style={'margin-left': '20px'}
+                style={'margin-left': '0px'}
             ),
             dcc.Input(
                 id='input-year',
                 value='2010',
                 type='number',
-                style={'height': '35px', 'font-size': 30, 'font-family': 'Calibri'}
+                style={'height': '35px', 'font-size': 30, 'font-family': 'Calibri', 'margin-left': '10px'}
             )
         ],
-        style={'font-size': 30, 'font-family': 'Calibri'}
+        style={'display': 'flex', 'justify-content': 'center', 'align-items': 'center', 'font-size': 30, 'font-family': 'Calibri'}
     ),
 
     html.Br(),
@@ -92,8 +93,9 @@ app.layout = html.Div(children=[
     # Segment 1
     html.Div(
         [
-            html.Div(dcc.Graph(id='carrier-plot')),
-            html.Div(dcc.Graph(id='weather-plot'))
+            html.Div(dcc.Graph(id='carrier-plot'),
+                     style={'border':'2px solid black', 'border-radius':'10px', 'margin':'10px', 'width':'48%', 'padding':'10px'}),
+            html.Div(dcc.Graph(id='weather-plot'), style={'border':'2px solid black', 'border-radius':'10px', 'margin':'10px', 'width':'48%', 'padding':'10px'})
         ],
         style={'display': 'flex'}
     ),
@@ -101,8 +103,8 @@ app.layout = html.Div(children=[
     # Segment 2
     html.Div(
         [
-            html.Div(dcc.Graph(id='nas-plot')),
-            html.Div(dcc.Graph(id='security-plot'))
+            html.Div(dcc.Graph(id='nas-plot'), style={'border':'2px solid black', 'border-radius':'10px', 'margin':'10px', 'width':'48%', 'padding':'10px'}),
+            html.Div(dcc.Graph(id='security-plot'), style={'border':'2px solid black', 'border-radius':'10px', 'margin':'10px', 'width':'48%', 'padding':'10px'})
         ],
         style={'display': 'flex'}
     ),
@@ -110,7 +112,7 @@ app.layout = html.Div(children=[
     # Segment 3
     html.Div(
         dcc.Graph(id='late-plot'),
-        style={'width': '65%', 'margin': '0 auto'}
+        style={'width': '65%', 'margin': '0 auto', 'border':'2px solid black', 'border-radius':'10px', 'margin-top':'10px'}
     )
 ])
 
@@ -182,7 +184,7 @@ def get_graph(entered_year):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
 
 # Prints ------------------------------------------------------------------------------------------------
 
