@@ -64,12 +64,24 @@ server= app.server
 
 # Define the layout of the app
 app.layout = html.Div(children=[
-    # Title
-    html.H1(
-        'Flight Delay Time Statistics',
-        style={'textAlign': 'center', 'color': 'cadetblue', 'fontSize': 45, 'font-family': 'Calibri'}
-    ),
+    
+    html.Div([
+  # Title
+    html.H1('Flight Delay Time Statistics',
+    style={'textAlign': 'center', 'color': 'cadetblue', 'fontSize': 45, 'font-family': 'Calibri', 'marginBottom':'10px'}),
 
+    # Button
+    html.A(
+        'Repo',
+        href='https://github.com/CxLos/Flight_Delay_Statistics?tab=readme-ov-file',
+        className='btn')
+        ], 
+        style={'display': 'flex', 
+          'flexDirection':'column',
+          'textAlign': 'center', 
+          'margin':'0px'}),
+
+  
     # Input box
     html.Div(
         [
@@ -84,7 +96,7 @@ app.layout = html.Div(children=[
                 style={'height': '35px', 'font-size': 30, 'font-family': 'Calibri', 'margin-left': '10px'}
             )
         ],
-        style={'display': 'flex', 'justify-content': 'center', 'align-items': 'center', 'font-size': 30, 'font-family': 'Calibri'}
+        style={'display': 'flex', 'justify-content': 'center', 'align-items': 'center', 'font-size': 30, 'font-family': 'Calibri', 'margin':'20px 0px -20px 0px'}
     ),
 
     html.Br(),
@@ -184,7 +196,7 @@ def get_graph(entered_year):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
 
 # Prints ------------------------------------------------------------------------------------------------
 
