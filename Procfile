@@ -1,1 +1,1 @@
-web: gunicorn flight_delay_statistics:server
+web: gunicorn flight_delay:server
