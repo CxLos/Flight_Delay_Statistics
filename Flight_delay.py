@@ -179,7 +179,7 @@ if __name__ == '__main__':
 
 # Clear Heroku Cache:
 # heroku plugins:install heroku-repo
-# heroku repo:purge_cache -a us-immigration-statistics
+# heroku repo:purge_cache -a flight-delay-statistics
 
 # Heroku:
 # heroku login
