@@ -61,36 +61,37 @@ server= app.server
 # Finally, add graph component.
 # Build dash app layout
 app.layout = html.Div(children=[ 
-                        # Title
-                        html.H1('Flight Delay Time Statistics', 
-                          style={'textAlign': 'center', 'color': '#503D36',
-                          'font-size': 30}),
+    
+                    # Title
+                    html.H1('Flight Delay Time Statistics', 
+                      style={'textAlign': 'center', 'color': 'cadetblue',
+                      'fontSize': 45, 'font-family':'Calibri'}),
 
-                        # Input box
-                        html.Div(["Input Year: ", dcc.Input(id='input-year', value='2010', 
-                          type='number', style={'height':'35px', 'font-size': 30}),], 
-                          style={'font-size': 30}),
+                    # Input box
+                    html.Div(["Input Year: ", dcc.Input(id='input-year', value='2010', 
+                      type='number', style={'height':'35px', 'font-size': 30}),], 
+                      style={'font-size': 30, 'font-family':'Calibri'}),
 
-                        html.Br(),
-                        html.Br(), 
+                    html.Br(),
+                    html.Br(), 
 
-                        # Segment 1
-                        html.Div([
-                                  html.Div(dcc.Graph(id='carrier-plot')),
-                                  html.Div(dcc.Graph(id='weather-plot'))],
-                                    style={'display': 'flex'}),
+                    # Segment 1
+                    html.Div([
+                              html.Div(dcc.Graph(id='carrier-plot')),
+                              html.Div(dcc.Graph(id='weather-plot'))],
+                                style={'display': 'flex'}),
 
-                        # Segment 2
-                          html.Div([
-                                  html.Div(dcc.Graph(id='nas-plot')),
-                                  html.Div(dcc.Graph(id='security-plot'))],
-                                    style={'display': 'flex'}),
+                    # Segment 2
+                      html.Div([
+                              html.Div(dcc.Graph(id='nas-plot')),
+                              html.Div(dcc.Graph(id='security-plot'))],
+                                style={'display': 'flex'}),
 
-                        # Segment 3
-                        html.Div(
-                                  dcc.Graph(id='late-plot'),
-                                    style={'width':'65%'})
-                        ])
+                    # Segment 3
+                    html.Div(
+                              dcc.Graph(id='late-plot'),
+                                style={'width':'65%'})
+                    ])
 
 # Add computation to callback function and return graph
 def compute_info(airline_data, entered_year):
@@ -148,7 +149,7 @@ def get_graph(entered_year):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
 
 # Prints ------------------------------------------------------------------------------------------------
 
