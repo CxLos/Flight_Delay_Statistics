@@ -185,6 +185,7 @@ if __name__ == '__main__':
 # heroku login
 # heroku create flight-delay-statistics
 # heroku git:remote -a flight-delay-statistics
+# heroku ps:scale web=1  # run the app with a 1 heroku "dyno"
 # git push heroku main
 
 # Set Buildpack
