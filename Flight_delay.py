@@ -183,6 +183,9 @@ if __name__ == '__main__':
 
 # Heroku:
 # heroku login
-# heroku create your-app-name
-# heroku git:remote -a new-app-name
+# heroku create flight-delay-statistics
+# heroku git:remote -a flight-delay-statistics
 # git push heroku main
+
+# Set Buildpack
+# heroku buildpacks:set heroku/python
