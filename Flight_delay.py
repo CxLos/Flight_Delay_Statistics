@@ -7,17 +7,40 @@ from dash import dcc, html
 # from dash import html
 from dash.dependencies import Input, Output
 from dash.development.base_component import Component
+import os
+import sys
 
 # DATA--------------------------------------------------------------------------------------------------
 
-# airline_data =  pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/airline_data.csv', 
-#                             encoding = "ISO-8859-1",
-#                             dtype={'Div1Airport': str, 'Div1TailNum': str, 
-#                                    'Div2Airport': str, 'Div2TailNum': str})
+# data = r'C:\Users\CxLos\OneDrive\Documents\IBM Data Analyst Professional Certificate\IBM Practice Labs\8. Data Visualization with Python\W4 - Creating Dashboards with Plotly and Dash\Data\airline_data.csv'
 
-data = r'C:\Users\CxLos\OneDrive\Documents\IBM Data Analyst Professional Certificate\IBM Practice Labs\8. Data Visualization with Python\W4 - Creating Dashboards with Plotly and Dash\Data\airline_data.csv'
+# WORKING DIRECTORY ----------------------------------------------------------------------
 
-airline_data = pd.read_csv(data,
+# Get the current working directory
+current_dir = os.getcwd()
+# print('Current Directory:', current_dir)
+# print(os.listdir(current_dir))
+
+# Join the 'Data' directory to the current working directory
+imm_dir = os.path.join(current_dir, "Flight_Delay_Statistics")
+
+# List the files and directories in the 'Immigration Statistics 20 yrs' directory
+# print(os.listdir(current_dir))
+
+# Get the current directory of the script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+# print('Script Directory:', script_dir)
+
+# Define the relative path to your CSV file
+relative_path = 'Data/airline_data.csv'
+# print('Relative Path:', relative_path)
+
+# Join the script directory with the relative path to get the full file path
+file_path = os.path.join(script_dir, relative_path)
+
+# Read the CSV file using the full file path
+
+airline_data = pd.read_csv(file_path,
                    encoding="ISO-8859-1",
                    dtype={'Div1Airport': str, 'Div1TailNum': str, 
                           'Div2Airport': str, 'Div2TailNum': str})
