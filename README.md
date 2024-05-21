@@ -1,51 +1,43 @@
 # Flight-Delay-Statistics
 
-
-
 ## Description
 
-
+Flight-Delay-Statistics is a project aimed at visualizing and analyzing flight delay data using Python and various data visualization libraries. This project provides insights into different types of flight delays and their impacts over time organized by reporting airline.
 
 ## Table of Contents 
 	
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
-- [Badges](#badges)
-- [Features](#features)
-- [Tests](#tests)
-
 
 ## Installation
 
-N/A
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/CxLos/Flight_Delay_Statistics
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd Flight_Delay_Statistics
+    ```
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Usage
 
-<!-- [Portfolio](https://cxlos.github.io/CxLos-Portfolio/) -->
+To launch the dashboard, execute the following command in your terminal or click the following link:
 
-<!-- ![Preview](./US_Immigration_Statistics/screenshots/Screenshot-180706.png) -->
+[Flight Delay Statistics Dashboard](https://flight-delay-statistics-b070eee730f6.herokuapp.com/)
 
-## Badges
+```bash
+python app.py
+```
 
-N/A
-
-## Features
-
-N/A
-
-## How to Contribute
-
-N/A
-
-## Tests
-
-N/A
-
-## Credits
-
-N/A
+![Preview](./screenshots/Screenshot-1005.png)
 
 ## License
 
