@@ -48,6 +48,14 @@ The data for this project can be downloaded here:
 
 [Flight Delay Statistics](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/airline_data.csv)
 
+### Plans for collected Data
+
+- Implement real-time data streaming to continuously update flight delay statistics and improve the accuracy of the dashboard.
+- Enhance data visualization techniques to include interactive maps showcasing regional variations in flight delays.
+- Incorporate machine learning models to predict potential flight delays based on historical data and external factors like weather forecasts.
+- Collaborate with aviation industry partners to gather additional data sources and expand the scope of analysis to include factors such as airport operations and air traffic management.
+- Conduct periodic data analyses and publish insights or reports highlighting trends, patterns, and actionable recommendations for stakeholders in the aviation sector.
+
 ## Results
 
 ### Average Carrier Delay Time
