@@ -66,15 +66,11 @@ server= app.server
 app.layout = html.Div(children=[
     
     html.Div([
+
   # Title
     html.H1('Flight Delay Time Statistics',
     style={'textAlign': 'center', 'color': 'cadetblue', 'fontSize': 45, 'font-family': 'Calibri', 'marginBottom':'10px'}),
 
-    # Button
-    html.A(
-        'Repo',
-        href='https://github.com/CxLos/Flight_Delay_Statistics?tab=readme-ov-file',
-        className='btn')
         ], 
         style={'display': 'flex', 
           'flexDirection':'column',
@@ -83,21 +79,28 @@ app.layout = html.Div(children=[
 
   
     # Input box
-    html.Div(
-        [
+    html.Div([
             html.Span(
                 "Input Year: ",
-                style={'margin-left': '0px'}
-            ),
+                style={'margin-left': '0px'}),
+
             dcc.Input(
                 id='input-year',
                 value='2010',
                 type='number',
-                style={'height': '35px', 'font-size': 30, 'font-family': 'Calibri', 'margin-left': '10px'}
-            )
+                style={'height': '35px', 'font-size': 30, 'font-family': 'Calibri', 'margin-left': '10px'})
+                
         ],
-        style={'display': 'flex', 'justify-content': 'center', 'align-items': 'center', 'font-size': 30, 'font-family': 'Calibri', 'margin':'20px 0px -20px 0px'}
+        style={'display': 'flex', 'justify-content': 'center', 'align-items': 'center', 'font-size': 30, 'font-family': 'Calibri', 'margin':'15px 0px 0px 0px'}
     ),
+                
+    html.Div(className='divv', children=[ 
+                  # Button
+          html.A(
+              'Repo',
+              href='https://github.com/CxLos/Flight_Delay_Statistics?tab=readme-ov-file',
+              className='btn')
+                      ]),
 
     html.Br(),
     html.Br(),
@@ -196,7 +199,7 @@ def get_graph(entered_year):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
 
 # Prints ------------------------------------------------------------------------------------------------
 

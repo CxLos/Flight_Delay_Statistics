@@ -2,7 +2,7 @@
 .btn {
   display: inline-block;
   text-align: center;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   color:black;
   background-color: lightgray;
   border: 2px solid black;
@@ -19,4 +19,10 @@
 
 .btn:active {
   transform: translate(0, 3px); /* Move the button 10 pixels down on hover */
+}
+
+.divv{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px -20px 0px;
 }
