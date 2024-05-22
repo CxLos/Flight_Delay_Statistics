@@ -8,6 +8,9 @@ Flight-Delay-Statistics is a project aimed at visualizing and analyzing flight d
 	
 - [Installation](#installation)
 - [Usage](#usage)
+- [Methodology](#methodology)
+- [Results](#results)
+- [Conclusion](#conclusion)
 - [License](#license)
 
 ## Installation
@@ -38,6 +41,42 @@ python app.py
 ```
 
 ![Preview](./screenshots/Screenshot-1005.png)
+
+## Methodology
+
+The data for this project can be downloaded here: 
+
+[Flight Delay Statistics](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/airline_data.csv)
+
+## Results
+
+### Average Carrier Delay Time
+
+* This line chart displays the average carrier delay times for different reporting airlines. Carrier delays are delays that occur due to circumstances within the airline's control, such as maintenance or crew issues. Understanding the average carrier delay times for each airline can help identify operational efficiency and customer service improvements.
+
+### Average Weather Delay Time
+
+* This line chart showcases the average weather delay times for different reporting airlines. Weather delays are caused by inclement weather conditions that affect flight operations. Analyzing the average weather delay times can aid in contingency planning and route optimization for airlines.
+
+### Average NAS Delay Time
+
+* This line chart illustrates the average National Airspace System (NAS) delay times for different reporting airlines. NAS delays occur due to factors such as air traffic control, airport congestion, or airspace restrictions. Identifying trends in NAS delay times can assist in airspace management and infrastructure enhancements.
+
+### Average Security Delay Time
+
+* This line chart presents the average security delay times for different reporting airlines. Security delays are delays caused by security-related issues, such as screening procedures or security incidents. Analyzing security delay times can contribute to enhancing airport security protocols and passenger experiences.
+
+### Average Late Aircraft Delay Time
+
+* This line chart depicts the average late aircraft delay times for different reporting airlines. Late aircraft delays occur when the incoming aircraft for a flight is delayed, affecting subsequent departures. Understanding late aircraft delay times can aid in scheduling optimizations and fleet management.
+
+## Conclusion
+
+The Flight-Delay-Statistics project offers valuable insights into the average delay times across different categories, including carrier delays, weather delays, NAS delays, security delays, and late aircraft delays, organized by reporting airlines. By visualizing and analyzing this data, stakeholders in the aviation industry can make data-driven decisions to improve operational efficiency, customer satisfaction, and overall flight performance.
+
+As I continue to enhance this project and incorporate additional data sources, I hope to provide even deeper insights into flight delay patterns and their impacts.
+
+Thank you for exploring the Flight Delay Statistics Dashboard!
 
 ## License
 
