@@ -32,9 +32,11 @@ To run this project locally, follow these steps:
 
 ## Usage
 
-To launch the dashboard, execute the following command in your terminal or click the following link:
+- This is an interactive Plotly/Dash dashboard. Please feel free to hover over any interesting data points that you would like to take a deeper dive on and zoom or zoom out to get a better view.
 
-[Flight Delay Statistics Dashboard](https://flight-delay-statistics-b070eee730f6.herokuapp.com/)
+- To launch the dashboard, execute the following command in your terminal or click the following link:
+
+  - [Flight Delay Statistics Dashboard](https://flight-delay-statistics-b070eee730f6.herokuapp.com/)
 
 ```bash
 python app.py
