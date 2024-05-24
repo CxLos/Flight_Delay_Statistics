@@ -39,7 +39,7 @@ To run this project locally, follow these steps:
   - [Flight Delay Statistics Dashboard](https://flight-delay-statistics-b070eee730f6.herokuapp.com/)
 
 ```bash
-python app.py
+python flight_delay.py
 ```
 
 ![Preview](./screenshots/Screenshot-1005.png)
